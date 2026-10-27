@@ -30,8 +30,14 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
+# local env files (.env holds the LLM API key; only .env.example is committed)
+.env
 .env*.local
+
+# Claude Code: personal files stay local; shared setup (CLAUDE.md, .claude/settings.json, hooks, skills) is committed
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/.verify-stamp
 
 # typescript
 *.tsbuildinfo
